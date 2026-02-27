@@ -1,0 +1,122 @@
+/* =========================
+   BUYER SIDEBAR (ADMIN STYLE)
+   ========================= */
+
+.buyer-sidebar {
+
+  width: 280px;
+  height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #14234a 0%,
+    #1b2f66 50%,
+    #0f1a2e 100%
+  );
+
+  color: white;
+
+  padding: 28px 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* TITLE */
+
+.buyer-sidebar h2 {
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  margin-bottom: 36px;
+
+  padding-left: 12px;
+
+}
+
+
+
+/* NAVIGATION */
+
+.buyer-sidebar nav {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+}
+
+
+
+/* LINKS */
+
+.buyer-sidebar a {
+
+  color: rgba(255,255,255,0.85);
+
+  text-decoration: none;
+
+  padding: 12px 16px;
+
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  transition: 0.25s;
+}
+
+
+
+/* HOVER */
+
+.buyer-sidebar a:hover {
+
+  background: rgba(255,255,255,0.12);
+
+  color: white;
+
+}
+
+
+
+/* ACTIVE */
+
+.buyer-sidebar a.active {
+
+  background: rgba(255,255,255,0.22);
+
+  font-weight: 600;
+
+  position: relative;
+
+}
+
+
+/* LEFT BAR */
+
+.buyer-sidebar a.active::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -22px;
+
+  top: 10%;
+
+  height: 80%;
+
+  width: 4px;
+
+  background: #2f80ff;
+
+  border-radius: 2px;
+
+}

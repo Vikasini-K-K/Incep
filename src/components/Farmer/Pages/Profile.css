@@ -1,0 +1,29 @@
+.farmer-profile-page {
+  padding: 64px;
+}
+
+.profile-card {
+  max-width: 600px;
+  padding: 32px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.value {
+  color: var(--text-primary);
+  font-weight: 500;
+}

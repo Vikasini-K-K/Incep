@@ -1,0 +1,39 @@
+/* ==============================
+   ADMIN LAYOUT (ROOT)
+   ============================== */
+
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* ⛔ prevent body scroll */
+}
+
+/* ==============================
+   FIXED SIDEBAR
+   ============================== */
+
+.admin-sidebar {
+  width: 260px;
+  height: 100vh;
+
+  position: fixed;   /* 🔒 stays in place */
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+}
+
+/* ==============================
+   MAIN CONTENT AREA
+   ============================== */
+
+.admin-main {
+  margin-left: 260px;                 /* ⬅️ same as sidebar */
+  width: calc(100vw - 260px);
+  height: 100vh;
+
+  overflow-y: auto;                   /* ✅ ONLY this scrolls */
+  overflow-x: hidden;
+
+  padding: 32px 40px;
+}
